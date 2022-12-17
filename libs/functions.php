@@ -1,32 +1,30 @@
 <?php
 
-function filmEkle(string $baslik, string $aciklama, string $resim, int $yorumSayisi = 0, int $begeniSayisi = 0, bool $vizyon = false)
+function filmAdd(string $title, string $comment, string $image, int $commentNumber = 0, int $likeNumber = 0, bool $vision = false)
 {
-
-    $new_item[count($_SESSION["filmler"]) + 1] = array(
-        "baslik" => $baslik,
-        "aciklama" => $aciklama,
-        "resim" => $resim,
-        "yorumSayisi" => $yorumSayisi,
-        "begeniSayisi" => $begeniSayisi,
-        "vizyon" => $vizyon
+    $new_item[count($_SESSION["films"]) + 1] = array(
+        "title" => $title,
+        "comment" => $comment,
+        "image" => $image,
+        "commentNumber" => $commentNumber,
+        "likeNumber" => $likeNumber,
+        "vision" => $vision
     );
 
-    $_SESSION["filmler"] = array_merge($_SESSION["filmler"], $new_item);
+    $_SESSION["films"] = array_merge($_SESSION["films"], $new_item);
 
-    foreach ($_SESSION["filmler"] as $key => $film) {
-        $_SESSION["filmler"][$key]["url"] = strtolower($_SESSION["filmler"][$key]["baslik"]);
-        $_SESSION["filmler"][$key]["url"] = str_replace([" ", "ç"], ["-", "c"], $_SESSION["filmler"][$key]["url"]);
+    foreach ($_SESSION["films"] as $key => $film) {
+        $_SESSION["films"][$key]["url"] = strtolower($_SESSION["filmler"][$key]["title"]);
+        $_SESSION["films"][$key]["url"] = str_replace([" ", "ç"], ["-", "c"], $_SESSION["filmler"][$key]["url"]);
     }
 }
 
-function kisaAciklama($aciklama, $limit)
+function shortComment($comment, $limit)
 {
-    if (strlen($aciklama) > $limit) {
-        echo substr($aciklama, 0, $limit) . "...";
+    if (strlen($comment) > $limit) {
+        echo substr($comment, 0, $limit) . "...";
     } else {
-        echo $aciklama;
+        echo $comment;
     };
 }
-
 ?>
