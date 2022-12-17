@@ -3,8 +3,8 @@
 if (!empty($_GET['q'])) {
     $keyword = $_GET['q'];
 
-    $filmler = array_filter($filmler, function ($film) use ($keyword) {
-        return (stristr($film['baslik'], $keyword) or stristr($film['aciklama'], $keyword));
+    $films = array_filter($films, function ($film) use ($keyword) {
+        return (stristr($film['title'], $keyword) or stristr($film['comment'], $keyword));
     });
 }
 
