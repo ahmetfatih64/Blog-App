@@ -1,24 +1,24 @@
 <component name="libraryTable">
-  <library name="versions">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-3.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-6.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-5.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-8.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-1.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-12.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-14.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-10.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-2.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-9.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-7.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-4.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-11.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-15.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/start.zip!/" />
-      <root url="jar://$PROJECT_DIR$/versions/blogapp-13.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
+    <library name="versions">
+        <CLASSES>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-3.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-6.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-5.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-8.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-1.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-12.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-14.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-10.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-2.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-9.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-7.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-4.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-11.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-15.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/start.zip!/"/>
+            <root url="jar://$PROJECT_DIR$/versions/blogapp-13.zip!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
+    </library>
 </component>
