@@ -1,7 +1,8 @@
 <?php
 
-function filmEkle(string $baslik, string $aciklama, string $resim, int $yorumSayisi=0,int $begeniSayisi=0,bool $vizyon=false) {
-        
+function filmEkle(string $baslik, string $aciklama, string $resim, int $yorumSayisi = 0, int $begeniSayisi = 0, bool $vizyon = false)
+{
+
     $new_item[count($_SESSION["filmler"]) + 1] = array(
         "baslik" => $baslik,
         "aciklama" => $aciklama,
@@ -15,15 +16,17 @@ function filmEkle(string $baslik, string $aciklama, string $resim, int $yorumSay
 
     foreach ($_SESSION["filmler"] as $key => $film) {
         $_SESSION["filmler"][$key]["url"] = strtolower($_SESSION["filmler"][$key]["baslik"]);
-        $_SESSION["filmler"][$key]["url"] = str_replace([" ","ç"],["-","c"],$_SESSION["filmler"][$key]["url"]);
+        $_SESSION["filmler"][$key]["url"] = str_replace([" ", "ç"], ["-", "c"], $_SESSION["filmler"][$key]["url"]);
     }
 }
 
-function kisaAciklama($aciklama, $limit) {
+function kisaAciklama($aciklama, $limit)
+{
     if (strlen($aciklama) > $limit) {
-        echo substr($aciklama,0,$limit)."...";
+        echo substr($aciklama, 0, $limit) . "...";
     } else {
         echo $aciklama;
     };
 }
+
 ?>

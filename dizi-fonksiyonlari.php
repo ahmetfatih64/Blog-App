@@ -1,67 +1,66 @@
 <?php
-    
-    $sayilar = array(1,5,7,4,56,78,12,45);
-    $isimler = array("ali","zeynep","canan","beril");
-    $kullanicilar = array("sadikturan"=>"38","cinarturan"=>"4","yigitbilgi"=>"12");
 
-    // echo count($sayilar)."<br>";
-    // echo count($isimler)."<br>";
-    // echo count($kullanicilar)."<br>";
+$sayilar = array(1, 5, 7, 4, 56, 78, 12, 45);
+$isimler = array("ali", "zeynep", "canan", "beril");
+$kullanicilar = array("sadikturan" => "38", "cinarturan" => "4", "yigitbilgi" => "12");
 
-    # artan sırada
-    sort($sayilar);
-    sort($isimler);
-    asort($kullanicilar); # value
-    ksort($kullanicilar); # key
+// echo count($sayilar)."<br>";
+// echo count($isimler)."<br>";
+// echo count($kullanicilar)."<br>";
 
-    # azalan sırada
-    rsort($sayilar);
-    rsort($isimler);
-    arsort($kullanicilar); # value
-    krsort($kullanicilar); # key
+# artan sırada
+sort($sayilar);
+sort($isimler);
+asort($kullanicilar); # value
+ksort($kullanicilar); # key
 
-    print_r($sayilar);
-    echo "<br>";
-    print_r($isimler);
-    echo "<br>";
-    print_r($kullanicilar);
+# azalan sırada
+rsort($sayilar);
+rsort($isimler);
+arsort($kullanicilar); # value
+krsort($kullanicilar); # key
 
-    # string to array
-    $string = "sadık|turan|38";
-    $arr = explode("|",$string);
+print_r($sayilar);
+echo "<br>";
+print_r($isimler);
+echo "<br>";
+print_r($kullanicilar);
 
-    # array to string
-    $arr = array("sadık","turan","38");
-    $string = implode(",", $arr);
+# string to array
+$string = "sadık|turan|38";
+$arr = explode("|", $string);
 
-    # rastgele sıralama
-    print_r($isimler);
-    echo "<br>";
-    shuffle($isimler);
-    print_r($isimler);
-    print_r($string);
+# array to string
+$arr = array("sadık", "turan", "38");
+$string = implode(",", $arr);
 
-    # dizi birleştirme
-    $plakalar = array("41","34");
-    $sehirler = array("kocaeli","istanbul");
+# rastgele sıralama
+print_r($isimler);
+echo "<br>";
+shuffle($isimler);
+print_r($isimler);
+print_r($string);
 
-    $arr = array_combine($plakalar,$sehirler);
+# dizi birleştirme
+$plakalar = array("41", "34");
+$sehirler = array("kocaeli", "istanbul");
 
-    $arr1 = ["istanbul","kocaeli"];
-    $arr2 = ["rize","izmir"];
+$arr = array_combine($plakalar, $sehirler);
 
-    $arr = array_merge($arr1,$arr2);
+$arr1 = ["istanbul", "kocaeli"];
+$arr2 = ["rize", "izmir"];
 
-    # eleman tekrarlama sayıları
-    $arr1 = ["istanbul","kocaeli","istanbul","kocaeli","izmir","rize"];
-    $arr = array_count_values($arr1);
+$arr = array_merge($arr1, $arr2);
 
-    # dizinin sonuna eleman ekleme
-    array_push($arr1,"giresun");
+# eleman tekrarlama sayıları
+$arr1 = ["istanbul", "kocaeli", "istanbul", "kocaeli", "izmir", "rize"];
+$arr = array_count_values($arr1);
 
-    # dizinin başına eleman ekleme
-    array_unshift($arr1,"yalova");
+# dizinin sonuna eleman ekleme
+array_push($arr1, "giresun");
 
-    print_r($arr1);
+# dizinin başına eleman ekleme
+array_unshift($arr1, "yalova");
 
+print_r($arr1);
 ?>
